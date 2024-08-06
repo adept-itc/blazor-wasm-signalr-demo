@@ -1,0 +1,18 @@
+﻿@page "/"
+@rendermode InteractiveAuto
+@implements IAsyncDisposable
+
+<PageTitle>Adept ITC | Blazor WASM Demo</PageTitle>
+
+<h1>Adept ITC | Blazor WASM Demo</h1>
+
+<h2>List of IoT Devices</h2>
+
+<EditForm Model="this._iotDeviceViewModels">
+  <div>
+    @for (int counter = 0; counter < this._iotDeviceViewModels.Count; counter++)
+    {
+      <IotDevice Item="this._iotDeviceViewModels[counter]" ItemChanged="this.OnIotDeviceChanged" />
+    }
+  </div>
+</EditForm>

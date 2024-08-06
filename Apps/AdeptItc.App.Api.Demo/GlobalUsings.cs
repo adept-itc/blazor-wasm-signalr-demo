@@ -1,0 +1,14 @@
+﻿global using AutoMapper;
+global using AdeptItc.Demo.Database.Contexts;
+global using AdeptItc.Demo.Database.Contexts.Interfaces;
+global using AdeptItc.Demo.Database.Models;
+global using AdeptItc.Demo.Database.Models.MappingProfiles;
+global using AdeptItc.Demo.Repositories;
+global using AdeptItc.Demo.Repositories.Interfaces;
+global using AdeptItc.Demo.Services;
+global using AdeptItc.Demo.Services.Interfaces;
+global using AdeptItc.Demo.ViewModels;
+global using AdeptItc.Demo.ViewModels.MappingProfiles;
+global using AdeptItc.App.Api.Demo.Extensions;
+global using AdeptItc.App.Api.Demo.Hubs;
+global using Microsoft.AspNetCore.SignalR;

@@ -1,0 +1,18 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="13.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\AdeptItc.Demo.Repositories.Interfaces\AdeptItc.Demo.Repositories.Interfaces.csproj" />
+    <ProjectReference Include="..\AdeptItc.Demo.Database.Contexts.Interfaces\AdeptItc.Demo.Database.Contexts.Interfaces.csproj" />
+  </ItemGroup>
+
+</Project>

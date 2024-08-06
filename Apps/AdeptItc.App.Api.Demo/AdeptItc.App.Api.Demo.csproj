@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="8.0.6" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Libs\AdeptItc.Demo.ViewModels\AdeptItc.Demo.ViewModels.csproj" />
+    <ProjectReference Include="..\..\Libs\AdeptItc.Demo.Database.Models.MappingProfiles\AdeptItc.Demo.Database.Models.MappingProfiles.csproj" />
+    <ProjectReference Include="..\..\Libs\AdeptItc.Demo.Repositories.Interfaces\AdeptItc.Demo.Repositories.Interfaces.csproj" />
+    <ProjectReference Include="..\..\Libs\AdeptItc.Demo.Repositories\AdeptItc.Demo.Repositories.csproj" />
+    <ProjectReference Include="..\..\Libs\AdeptItc.Demo.ViewModels.MappingProfiles\AdeptItc.Demo.ViewModels.MappingProfiles.csproj" />
+    <ProjectReference Include="..\..\Libs\AdeptItc.Demo.Database.Contexts.Interfaces\AdeptItc.Demo.Database.Contexts.Interfaces.csproj" />
+    <ProjectReference Include="..\..\Libs\AdeptItc.Demo.Database.Contexts\AdeptItc.Demo.Database.Contexts.csproj" />
+    <ProjectReference Include="..\..\Libs\AdeptItc.Demo.Services.Interfaces\AdeptItc.Demo.Services.Interfaces.csproj" />
+    <ProjectReference Include="..\..\Libs\AdeptItc.Demo.Services\AdeptItc.Demo.Services.csproj" />
+  </ItemGroup>
+
+</Project>

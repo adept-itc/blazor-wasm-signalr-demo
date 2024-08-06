@@ -1,0 +1,41 @@
+﻿<div class="iot-device-grid @(this.Item.IsAlarmed ? "iot-device-status-alarmed" : "")">
+  <div class="iot-device-name">
+    @this.Item.Name
+  </div>
+  <div>
+    Is open?
+    <InputSelect class="form-select"
+                 TValue="bool"
+                 Value="this.Item.IsOpen"
+                 ValueChanged="this.OnIsOpenChanged"
+                 ValueExpression="@(() => this.Item.IsOpen)">
+      <option value="true" selected="@(this.Item.IsOpen)">Open</option>
+      <option value="false" selected="@(!this.Item.IsOpen)">Closed</option>
+    </InputSelect>
+  </div>
+  <div>
+    Is locked?
+    <InputSelect class="form-select"
+                 TValue="bool"
+                 Value="this.Item.IsLocked"
+                 ValueChanged="this.OnIsLockedChanged"
+                 ValueExpression="@(() => this.Item.IsLocked)">
+      <option value="true" selected="@(this.Item.IsLocked)">Locked</option>
+      <option value="false" selected="@(!this.Item.IsLocked)">Unlocked</option>
+    </InputSelect>
+  </div>
+  <div>
+    Is alarmed?
+    <InputSelect class="form-select"
+                 TValue="bool"
+                 Value="this.Item.IsAlarmed"
+                 ValueChanged="this.OnIsAlarmedChanged"
+                 ValueExpression="@(() => this.Item.IsAlarmed)">
+      <option value="false" selected="@(!this.Item.IsAlarmed)">Inactive</option>
+      <option value="true" selected="@(this.Item.IsAlarmed)">Alarmed</option>
+    </InputSelect>
+  </div>
+  <div>
+    @this.Item.Location
+  </div>
+</div>
